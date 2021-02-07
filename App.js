@@ -12,11 +12,11 @@ const App = () => {
   return (
       <NavigationContainer>
         <Stack.Navigator screenOptions={{headerShown: false}}>
-          <Stack.Screen name="Home">
-            {props => <Home {...props}/>}
-          </Stack.Screen>
           <Stack.Screen name="Form">
             {props => <Form {...props}/>}
+          </Stack.Screen>
+          <Stack.Screen name="Home">
+            {props => <Home {...props}/>}
           </Stack.Screen>
           <Stack.Screen name="Details">
             {props => <Details {...props}/>}
