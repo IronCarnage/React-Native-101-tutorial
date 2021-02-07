@@ -10,8 +10,7 @@ const Form = (props) => {
     }, [register]);
 
     const showDetail = (data) => {
-      //TODO navigate to details with correct data
-        console.log(data);
+        props.navigation.navigate("Details", {name: data.name})
     };
 
     return (

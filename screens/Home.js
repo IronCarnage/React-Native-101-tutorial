@@ -3,15 +3,14 @@ import { StyleSheet, Text, View , TouchableOpacity} from 'react-native';
 
 const Home = (props) => {
     const navigateToForm = () => {
-        //Todo navigate to Form.js
-        console.log("navigating!")
+        props.navigation.navigate('Form');
     };
 
     return (
         <View style={styles.container}>
             <Text>This is the Home Page</Text>
             <Text>This should be the first page you see!</Text>
-            <TouchableOpacity onPress={() => navigateToForm} style={styles.button}>
+            <TouchableOpacity onPress={navigateToForm} style={styles.button}>
                 <Text>go to the form</Text>
             </TouchableOpacity>
         </View>
